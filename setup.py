@@ -1,10 +1,18 @@
-from distutils.core import setup
+from setuptools import setup
+# read the contents of your README file
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name = 'print_logger',
     packages = ['print_logger'],
-    version = '1.0.0',
+    version = '1.0.3',
     license='MIT',
-    description = 'Python print with strict structure',
+    description = 'Print Logger Python print with strict structure',
+    long_description = long_description,
+    long_description_content_type='text/markdown',
     author = 'Huan Nguyen',
     author_email = 'nguyenxuanhuan.95@gmail.com',
     url = 'https://github.com/xuanhuan95/print_log',

@@ -2,6 +2,11 @@
 
 Python print with strict structure
 
+```bash
+time|trace_id|PID|thread_info|level|class_method_line|message
+```
+thread_info = name-native_id-identity_id
+
 ## Install
 
 ```bash
